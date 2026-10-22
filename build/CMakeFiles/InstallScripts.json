@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/jakam/Documents/Projects/tensorica/build/cmake_install.cmake",
+		"/home/jakam/Documents/Projects/tensorica/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

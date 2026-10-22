@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/tensorica_tests.dir/link.d CMakeFiles/tensorica_tests.dir/tensor_smoke.cpp.o -o tensorica_tests
