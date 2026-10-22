@@ -492,17 +492,30 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named tensorica_tests
+# Target rules for targets named tensorica_smoke_tests
 
 # Build rule for target.
-tensorica_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tensorica_tests
-.PHONY : tensorica_tests
+tensorica_smoke_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tensorica_smoke_tests
+.PHONY : tensorica_smoke_tests
 
 # fast build rule for target.
-tensorica_tests/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_tests.dir/build.make tests/CMakeFiles/tensorica_tests.dir/build
-.PHONY : tensorica_tests/fast
+tensorica_smoke_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_smoke_tests.dir/build.make tests/CMakeFiles/tensorica_smoke_tests.dir/build
+.PHONY : tensorica_smoke_tests/fast
+
+#=============================================================================
+# Target rules for targets named tensorica_arithmetic_tests
+
+# Build rule for target.
+tensorica_arithmetic_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tensorica_arithmetic_tests
+.PHONY : tensorica_arithmetic_tests
+
+# fast build rule for target.
+tensorica_arithmetic_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_arithmetic_tests.dir/build.make tests/CMakeFiles/tensorica_arithmetic_tests.dir/build
+.PHONY : tensorica_arithmetic_tests/fast
 
 # Help Target
 help:
@@ -541,7 +554,8 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... tensorica_tests"
+	@echo "... tensorica_arithmetic_tests"
+	@echo "... tensorica_smoke_tests"
 .PHONY : help
 
 

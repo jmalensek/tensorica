@@ -29,7 +29,8 @@
 /home/jakam/Documents/Projects/tensorica/build/CMakeFiles/test.dir
 /home/jakam/Documents/Projects/tensorica/build/CMakeFiles/edit_cache.dir
 /home/jakam/Documents/Projects/tensorica/build/CMakeFiles/rebuild_cache.dir
-/home/jakam/Documents/Projects/tensorica/build/tests/CMakeFiles/tensorica_tests.dir
+/home/jakam/Documents/Projects/tensorica/build/tests/CMakeFiles/tensorica_smoke_tests.dir
+/home/jakam/Documents/Projects/tensorica/build/tests/CMakeFiles/tensorica_arithmetic_tests.dir
 /home/jakam/Documents/Projects/tensorica/build/tests/CMakeFiles/test.dir
 /home/jakam/Documents/Projects/tensorica/build/tests/CMakeFiles/edit_cache.dir
 /home/jakam/Documents/Projects/tensorica/build/tests/CMakeFiles/rebuild_cache.dir

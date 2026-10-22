@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tensorica_tests.dir/link.d"
+  "CMakeFiles/tensorica_tests.dir/arithmetic_test.cpp.o"
+  "CMakeFiles/tensorica_tests.dir/arithmetic_test.cpp.o.d"
   "CMakeFiles/tensorica_tests.dir/tensor_smoke.cpp.o"
   "CMakeFiles/tensorica_tests.dir/tensor_smoke.cpp.o.d"
   "tensorica_tests"

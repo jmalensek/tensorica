@@ -86,5 +86,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
-  "tests/CMakeFiles/tensorica_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/tensorica_smoke_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/tensorica_arithmetic_tests.dir/DependInfo.cmake"
   )

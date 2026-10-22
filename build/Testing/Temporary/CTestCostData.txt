@@ -1,2 +1,4 @@
-tensorica_tests 2 0.0011021
+tensorica_tests 2 0
+tensorica_smoke_tests 2 0.00119138
+tensorica_arithmetic_tests 2 0.00121665
 ---

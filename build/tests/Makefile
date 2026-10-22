@@ -128,25 +128,63 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/tensorica_tests.dir/rule:
-	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tensorica_tests.dir/rule
-.PHONY : tests/CMakeFiles/tensorica_tests.dir/rule
+tests/CMakeFiles/tensorica_smoke_tests.dir/rule:
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tensorica_smoke_tests.dir/rule
+.PHONY : tests/CMakeFiles/tensorica_smoke_tests.dir/rule
 
 # Convenience name for target.
-tensorica_tests: tests/CMakeFiles/tensorica_tests.dir/rule
-.PHONY : tensorica_tests
+tensorica_smoke_tests: tests/CMakeFiles/tensorica_smoke_tests.dir/rule
+.PHONY : tensorica_smoke_tests
 
 # fast build rule for target.
-tensorica_tests/fast:
-	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_tests.dir/build.make tests/CMakeFiles/tensorica_tests.dir/build
-.PHONY : tensorica_tests/fast
+tensorica_smoke_tests/fast:
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_smoke_tests.dir/build.make tests/CMakeFiles/tensorica_smoke_tests.dir/build
+.PHONY : tensorica_smoke_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/tensorica_arithmetic_tests.dir/rule:
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tensorica_arithmetic_tests.dir/rule
+.PHONY : tests/CMakeFiles/tensorica_arithmetic_tests.dir/rule
+
+# Convenience name for target.
+tensorica_arithmetic_tests: tests/CMakeFiles/tensorica_arithmetic_tests.dir/rule
+.PHONY : tensorica_arithmetic_tests
+
+# fast build rule for target.
+tensorica_arithmetic_tests/fast:
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_arithmetic_tests.dir/build.make tests/CMakeFiles/tensorica_arithmetic_tests.dir/build
+.PHONY : tensorica_arithmetic_tests/fast
+
+arithmetic_test.o: arithmetic_test.cpp.o
+.PHONY : arithmetic_test.o
+
+# target to build an object file
+arithmetic_test.cpp.o:
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_arithmetic_tests.dir/build.make tests/CMakeFiles/tensorica_arithmetic_tests.dir/arithmetic_test.cpp.o
+.PHONY : arithmetic_test.cpp.o
+
+arithmetic_test.i: arithmetic_test.cpp.i
+.PHONY : arithmetic_test.i
+
+# target to preprocess a source file
+arithmetic_test.cpp.i:
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_arithmetic_tests.dir/build.make tests/CMakeFiles/tensorica_arithmetic_tests.dir/arithmetic_test.cpp.i
+.PHONY : arithmetic_test.cpp.i
+
+arithmetic_test.s: arithmetic_test.cpp.s
+.PHONY : arithmetic_test.s
+
+# target to generate assembly for a file
+arithmetic_test.cpp.s:
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_arithmetic_tests.dir/build.make tests/CMakeFiles/tensorica_arithmetic_tests.dir/arithmetic_test.cpp.s
+.PHONY : arithmetic_test.cpp.s
 
 tensor_smoke.o: tensor_smoke.cpp.o
 .PHONY : tensor_smoke.o
 
 # target to build an object file
 tensor_smoke.cpp.o:
-	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_tests.dir/build.make tests/CMakeFiles/tensorica_tests.dir/tensor_smoke.cpp.o
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_smoke_tests.dir/build.make tests/CMakeFiles/tensorica_smoke_tests.dir/tensor_smoke.cpp.o
 .PHONY : tensor_smoke.cpp.o
 
 tensor_smoke.i: tensor_smoke.cpp.i
@@ -154,7 +192,7 @@ tensor_smoke.i: tensor_smoke.cpp.i
 
 # target to preprocess a source file
 tensor_smoke.cpp.i:
-	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_tests.dir/build.make tests/CMakeFiles/tensorica_tests.dir/tensor_smoke.cpp.i
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_smoke_tests.dir/build.make tests/CMakeFiles/tensorica_smoke_tests.dir/tensor_smoke.cpp.i
 .PHONY : tensor_smoke.cpp.i
 
 tensor_smoke.s: tensor_smoke.cpp.s
@@ -162,7 +200,7 @@ tensor_smoke.s: tensor_smoke.cpp.s
 
 # target to generate assembly for a file
 tensor_smoke.cpp.s:
-	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_tests.dir/build.make tests/CMakeFiles/tensorica_tests.dir/tensor_smoke.cpp.s
+	cd /home/jakam/Documents/Projects/tensorica/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tensorica_smoke_tests.dir/build.make tests/CMakeFiles/tensorica_smoke_tests.dir/tensor_smoke.cpp.s
 .PHONY : tensor_smoke.cpp.s
 
 # Help Target
@@ -174,7 +212,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... tensorica_tests"
+	@echo "... tensorica_arithmetic_tests"
+	@echo "... tensorica_smoke_tests"
+	@echo "... arithmetic_test.o"
+	@echo "... arithmetic_test.i"
+	@echo "... arithmetic_test.s"
 	@echo "... tensor_smoke.o"
 	@echo "... tensor_smoke.i"
 	@echo "... tensor_smoke.s"

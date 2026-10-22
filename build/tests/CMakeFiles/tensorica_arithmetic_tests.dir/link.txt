@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/tensorica_arithmetic_tests.dir/link.d CMakeFiles/tensorica_arithmetic_tests.dir/arithmetic_test.cpp.o -o tensorica_arithmetic_tests

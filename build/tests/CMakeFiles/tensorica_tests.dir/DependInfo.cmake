@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/jakam/Documents/Projects/tensorica/tests/arithmetic_test.cpp" "tests/CMakeFiles/tensorica_tests.dir/arithmetic_test.cpp.o" "gcc" "tests/CMakeFiles/tensorica_tests.dir/arithmetic_test.cpp.o.d"
   "/home/jakam/Documents/Projects/tensorica/tests/tensor_smoke.cpp" "tests/CMakeFiles/tensorica_tests.dir/tensor_smoke.cpp.o" "gcc" "tests/CMakeFiles/tensorica_tests.dir/tensor_smoke.cpp.o.d"
   "" "tests/tensorica_tests" "gcc" "tests/CMakeFiles/tensorica_tests.dir/link.d"
   )

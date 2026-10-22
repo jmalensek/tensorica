@@ -201,6 +201,10 @@ public:
     typename std::vector<T>::const_iterator end() const noexcept;
 };
 
+// ------------------------------------------------------------------------------
+// CLASS METHODS IMPLEMENTATIONS
+// ------------------------------------------------------------------------------
+
 // CONSTRUCTORS
 template<typename T>
 Tensor<T>::Tensor(const std::vector<size_t>& shape)
