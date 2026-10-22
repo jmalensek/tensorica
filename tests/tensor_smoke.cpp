@@ -7,7 +7,7 @@ int main() {
     using tsr::Tensor;
 
     // Scalar tensor behavior (rank-0).
-    Tensor<int> scalar;
+    Tensor<int, 0> scalar;
     assert(scalar.size() == 1);
     scalar.at({}) = 7;
     assert(scalar.at({}) == 7);
@@ -21,7 +21,7 @@ int main() {
     assert(scalar_rejects_indices);
 
     // Basic shape/size/indexing.
-    Tensor<int> t({2, 3}, 1);
+    Tensor<int, 2> t({2, 3}, 1);
     assert(t.size() == 6);
     assert(t.shape().size() == 2);
     assert(t.at({1, 2}) == 1);
@@ -53,7 +53,7 @@ int main() {
     }
 
     // Zero-size dimension.
-    Tensor<int> z({0, 5});
+    Tensor<int, 2> z({0, 5});
     assert(z.size() == 0);
     assert(z.empty());
 

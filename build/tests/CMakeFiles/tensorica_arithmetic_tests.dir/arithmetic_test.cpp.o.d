@@ -1,7 +1,7 @@
 tests/CMakeFiles/tensorica_arithmetic_tests.dir/arithmetic_test.cpp.o: \
  /home/jakam/Documents/Projects/tensorica/tests/arithmetic_test.cpp \
  /usr/include/stdc-predef.h \
- /home/jakam/Documents/Projects/tensorica/include/arithmetic/addition/addition.hpp \
+ /home/jakam/Documents/Projects/tensorica/include/tensorica/arithmetic/addition/addition.hpp \
  /usr/include/c++/16/stdexcept /usr/include/c++/16/exception \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -119,6 +119,6 @@ tests/CMakeFiles/tensorica_arithmetic_tests.dir/arithmetic_test.cpp.o: \
  /usr/include/c++/16/bits/ranges_algo.h \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_algorithm_defs.h \
- /usr/include/c++/16/pstl/execution_defs.h \
- /home/jakam/Documents/Projects/tensorica/include/arithmetic/subtraction/subtraction.hpp \
+ /usr/include/c++/16/pstl/execution_defs.h /usr/include/c++/16/array \
+ /home/jakam/Documents/Projects/tensorica/include/tensorica/arithmetic/subtraction/subtraction.hpp \
  /usr/include/c++/16/cassert /usr/include/assert.h

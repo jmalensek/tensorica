@@ -13,30 +13,34 @@ namespace tsr {
 // ------------------------------------------------------------------------------
 
 // Tensor addition function with safety checks. Returns a new Tensor.
-template<typename T> Tensor<T> add(const Tensor<T>& a, const Tensor<T>& b);
+template<typename T, std::size_t Rank> 
+Tensor<T, Rank> add(const Tensor<T, Rank>& a, const Tensor<T, Rank>& b);
 
 // Tensor addition function without safety checks. Returns a new Tensor.
 // Shape compatibility validation is left to the caller.
-template<typename T> Tensor<T> add_unsafe(const Tensor<T>& a, const Tensor<T>& b);
+template<typename T, std::size_t Rank> 
+Tensor<T, Rank> add_unsafe(const Tensor<T, Rank>& a, const Tensor<T, Rank>& b);
 
 // In-place tensor addition function with safety checks. Modifies the first tensor.
-template<typename T> void add_inplace(Tensor<T>& a, const Tensor<T>& b);
+template<typename T, std::size_t Rank> 
+void add_inplace(Tensor<T, Rank>& a, const Tensor<T, Rank>& b);
 
 // In-place tensor addition function without safety checks. Modifies the first tensor.
 // Shape compatibility validation is left to the caller.
-template<typename T> void add_inplace_unsafe(Tensor<T>& a, const Tensor<T>& b);
+template<typename T, std::size_t Rank> 
+void add_inplace_unsafe(Tensor<T, Rank>& a, const Tensor<T, Rank>& b);
 
 // ------------------------------------------------------------------------------
 // IMPLEMENTATIONS
 // ------------------------------------------------------------------------------
 
-template<typename T>
-Tensor<T> add(const Tensor<T>& a, const Tensor<T>& b) {
+template<typename T, std::size_t Rank>
+Tensor<T, Rank> add(const Tensor<T, Rank>& a, const Tensor<T, Rank>& b) {
     if(a.shape() != b.shape()) {
         throw std::invalid_argument("Tensors must have the same shape for addition.");
     }
 
-    Tensor<T> result(a.shape());
+    Tensor<T, Rank> result(a.shape());
     size_t total_size = a.size();
 
     auto a_data = a.data_ptr();
@@ -50,9 +54,9 @@ Tensor<T> add(const Tensor<T>& a, const Tensor<T>& b) {
     return result;
 }
 
-template<typename T>
-Tensor<T> add_unsafe(const Tensor<T>& a, const Tensor<T>& b) {
-    Tensor<T> result(a.shape());
+template<typename T, std::size_t Rank>
+Tensor<T, Rank> add_unsafe(const Tensor<T, Rank>& a, const Tensor<T, Rank>& b) {
+    Tensor<T, Rank> result(a.shape());
     size_t total_size = a.size();
 
     auto a_data = a.data_ptr();
@@ -66,8 +70,8 @@ Tensor<T> add_unsafe(const Tensor<T>& a, const Tensor<T>& b) {
     return result;
 }
 
-template<typename T>
-void add_inplace(Tensor<T>& a, const Tensor<T>& b){
+template<typename T, std::size_t Rank>
+void add_inplace(Tensor<T, Rank>& a, const Tensor<T, Rank>& b){
     if(a.shape() != b.shape()) {
         throw std::invalid_argument("Tensors must have the same shape for addition.");
     }
@@ -81,8 +85,8 @@ void add_inplace(Tensor<T>& a, const Tensor<T>& b){
     }
 }
 
-template<typename T>
-void add_inplace_unsafe(Tensor<T>& a, const Tensor<T>& b){
+template<typename T, std::size_t Rank>
+void add_inplace_unsafe(Tensor<T, Rank>& a, const Tensor<T, Rank>& b){
     size_t total_size = a.size();
     auto a_data = a.data_ptr();
     auto b_data = b.data_ptr();

@@ -1,17 +1,17 @@
-Start testing: Oct 22 14:23 CEST
+Start testing: Oct 22 15:21 CEST
 ----------------------------------------------------------
 1/2 Testing: tensorica_smoke_tests
 1/2 Test: tensorica_smoke_tests
 Command: "/home/jakam/Documents/Projects/tensorica/build/tests/tensorica_smoke_tests"
 Directory: /home/jakam/Documents/Projects/tensorica/build/tests
-"tensorica_smoke_tests" start time: Oct 22 14:23 CEST
+"tensorica_smoke_tests" start time: Oct 22 15:21 CEST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"tensorica_smoke_tests" end time: Oct 22 14:23 CEST
+"tensorica_smoke_tests" end time: Oct 22 15:21 CEST
 "tensorica_smoke_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -19,15 +19,15 @@ Test Passed.
 2/2 Test: tensorica_arithmetic_tests
 Command: "/home/jakam/Documents/Projects/tensorica/build/tests/tensorica_arithmetic_tests"
 Directory: /home/jakam/Documents/Projects/tensorica/build/tests
-"tensorica_arithmetic_tests" start time: Oct 22 14:23 CEST
+"tensorica_arithmetic_tests" start time: Oct 22 15:21 CEST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"tensorica_arithmetic_tests" end time: Oct 22 14:23 CEST
+"tensorica_arithmetic_tests" end time: Oct 22 15:21 CEST
 "tensorica_arithmetic_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 22 14:23 CEST
+End testing: Oct 22 15:21 CEST
